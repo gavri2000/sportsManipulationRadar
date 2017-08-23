@@ -104,8 +104,9 @@ public class Main {
      */
     private static void initListOfGroups(List <Group> listOfGroups) {
         for (int i = 0; i < NUM_OF_GROUPS; i++) {
+            listOfGroups.add(new Group(i + 1, new ArrayList<Team>()));
             for (int j = 0; j < NUM_OF_TEAMS; j++) {
-                listOfGroups.get(i).getTeams().get(j).setTeamNumber(i * NUM_OF_TEAMS + j + 1);
+                listOfGroups.get(i).getTeams().add(new Team(i * NUM_OF_TEAMS + j + 1, 0));
             }
         }
     }

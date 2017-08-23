@@ -30,4 +30,8 @@ public class Group {
         this.groupNumber = groupNumber;
         this.teams = teams;
     }
+
+    public void SortTeams() {
+        teams.sort(Team::compareTo);
+    }
 }

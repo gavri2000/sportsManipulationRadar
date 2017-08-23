@@ -3,7 +3,7 @@ package com.eran;
 /**
  * Created by user on 23/08/2017.
  */
-public class Team {
+public class Team  implements Comparable<Team>{
     private int teamNumber;
     private int score;
 
@@ -26,5 +26,12 @@ public class Team {
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    @Override
+    public int compareTo(Team o) {
+        return score < o.getScore() ? -1
+                : score > o.getScore() ? 1
+                : 0;
     }
 }
