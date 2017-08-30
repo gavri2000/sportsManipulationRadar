@@ -32,20 +32,19 @@ public class RoundRobinAlgorithm {
             for (int t2 = 0; t2 <=1 ; t2++) {
                 for (int t3 = 0; t3 <=1 ; t3++) {
                     for (int t4 = 0; t4 <=1 ; t4++) {
-                        // TODO: fix the last condition of all the if commands (tournamentGraph[tm#.getTeamNumber() - 1][team.getTeamNumber()] == 000)
-                        if ((t1 == 1) && (coalition.contains(tm1)) && (tm1 != team) && (tournamentGraph[tm1.getTeamNumber() - 1][team.getTeamNumber()] == 000)) {
+                        if ((t1 == 1) && (coalition.contains(tm1)) && (tm1 != team) && (tournamentGraph[tm1.getTeamNumber() - 1][team.getTeamNumber()] == 1)) {
                             tm1.setScore(tm1.getScore() - 3);
                             team.setScore(team.getScore() + 3);
                         }
-                        if ((t2 == 1) && (coalition.contains(tm2)) && (tm2 != team) && (tournamentGraph[tm2.getTeamNumber() - 1][team.getTeamNumber()] == 000)) {
+                        if ((t2 == 1) && (coalition.contains(tm2)) && (tm2 != team) && (tournamentGraph[tm2.getTeamNumber() - 1][team.getTeamNumber()] == 1)) {
                             tm2.setScore(tm2.getScore() - 3);
                             team.setScore(team.getScore() + 3);
                         }
-                        if ((t3 == 1) && (coalition.contains(tm3)) && (tm1 != team) && (tournamentGraph[tm3.getTeamNumber() - 1][team.getTeamNumber()] == 000)) {
+                        if ((t3 == 1) && (coalition.contains(tm3)) && (tm1 != team) && (tournamentGraph[tm3.getTeamNumber() - 1][team.getTeamNumber()] == 1)) {
                             tm3.setScore(tm3.getScore() - 3);
                             team.setScore(team.getScore() + 3);
                         }
-                        if ((t4 == 1) && (coalition.contains(tm4)) && (tm4 != team) && (tournamentGraph[tm4.getTeamNumber() - 1][team.getTeamNumber()] == 000)) {
+                        if ((t4 == 1) && (coalition.contains(tm4)) && (tm4 != team) && (tournamentGraph[tm4.getTeamNumber() - 1][team.getTeamNumber()] == 1)) {
                             tm4.setScore(tm4.getScore() - 3);
                             team.setScore(team.getScore() + 3);
                         }
