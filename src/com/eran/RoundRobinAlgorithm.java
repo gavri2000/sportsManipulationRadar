@@ -32,6 +32,7 @@ public class RoundRobinAlgorithm {
             for (int t2 = 0; t2 <=1 ; t2++) {
                 for (int t3 = 0; t3 <=1 ; t3++) {
                     for (int t4 = 0; t4 <=1 ; t4++) {
+			    //TODO: need to check also the option of coallition group to lose in purpose to other groups than the group they want to win
                         if ((t1 == 1) && (coalition.contains(tm1)) && (tm1 != team) && (tournamentGraph[tm1.getTeamNumber() - 1][team.getTeamNumber()] == 1)) {
                             tm1.setScore(tm1.getScore() - 3);
                             team.setScore(team.getScore() + 3);

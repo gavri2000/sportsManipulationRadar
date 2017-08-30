@@ -103,6 +103,10 @@ public class Main {
      * @param listOfGroups
      */
     private static void initListOfGroups(List <Group> listOfGroups) {
+	    //TODO: add to team booleans flag of being in coallition and being group that coallition wants to win.
+	    //TODO: the group coallition want to win wins group with same score.
+	    //TODO: coallition group wins non-coallition group that is not group that coallition wants to win.
+	    //TODO: this way we won't have ties.
         for (int i = 0; i < NUM_OF_GROUPS; i++) {
             listOfGroups.add(new Group(i + 1, new ArrayList<Team>()));
             for (int j = 0; j < NUM_OF_TEAMS; j++) {
